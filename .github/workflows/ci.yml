@@ -23,5 +23,5 @@ jobs:
 
           - name: run tests
             run: |
-                cd Assignment1
+                cd assignment1
                 pytest
