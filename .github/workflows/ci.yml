@@ -18,7 +18,7 @@ jobs:
 
           - name: install dependencies
             run: |
-                cd Assignment1
+                cd assignment1
                 pip install -r requirements.txt
 
           - name: run tests
