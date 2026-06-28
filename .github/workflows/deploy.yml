@@ -23,4 +23,4 @@ jobs:
                     docker pull ${{vars.ECR_REPOSITORY}}:${{vars.IMAGE_TAG}}
                     docker stop ${{vars.CONTAINER_NAME}} || true
                     docker rm ${{vars.CONTAINER_NAME}} || true
-                    docker run -d --name ${{vars.CONTAINER_NAME}} -p ${{vars.HOST_PORT}}:${{vars.CONTAINERS_PORT}} ${{vars.ECR_REPOSITORY}}:${{vars.IMAGE_TAG}}
+                    docker run -d --name ${{vars.CONTAINER_NAME}} -p ${{vars.HOST_PORT}}:${{vars.CONTAINER_PORT}} ${{vars.ECR_REPOSITORY}}:${{vars.IMAGE_TAG}}
